@@ -10,7 +10,7 @@ import json
 import time
 
 HF_TOKEN=os.getenv("HF_TOKEN")
-DATASET_REPO="/Mehrdat/weapi-store"
+DATASET_REPO="Mehrdat/weapi-store"
 
 API_ROOT = "https://climatemonitor.info/api/public/v1"
 

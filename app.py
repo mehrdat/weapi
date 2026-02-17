@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 
 app=FastAPI(title="Climate Monitor API - CO2 Data")
 
-DATASET_REPO = "/Mehrdat/weapi-store"
+DATASET_REPO = "Mehrdat/weapi-store"
 
 @app.get("/")
 def home():
