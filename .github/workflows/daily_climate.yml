@@ -1,0 +1,22 @@
+name: Daily Climate Data Update
+on :
+  schedule:
+    - cron: '0 8 * * *' # Runs every day at midnight
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  run-science:
+    runs-on: ubuntu-latest
+    steps:
+      -uses: actions/checkout@v3
+      -name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      -name: Install dependencies
+        run: pip install pandas prophet requests huggingface_hub
+      -name: Run Scientific Engine
+        env:
+          HF_TOKEN: ${{ secrets.HF_HUB_TOKEN }}
+        run: python daily_engine.py 
+
