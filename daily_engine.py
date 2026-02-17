@@ -10,7 +10,7 @@ import json
 import time
 
 HF_TOKEN=os.getenv("HF_TOKEN")
-DATASET_REPO="https://huggingface.co/datasets/Mehrdat/weapi-store"
+DATASET_REPO="/Mehrdat/weapi-store"
 
 API_ROOT = "https://climatemonitor.info/api/public/v1"
 
@@ -204,7 +204,7 @@ def main():
         api = HfApi()
         api.upload_file(
             path_or_fileobj=io.BytesIO(json.dumps(full_report).encode('utf-8')),
-            path_in_repo=f"daily_reports/{today_str}.json",
+            path_in_repo=f"data/{today_str}.json",
             repo_id=DATASET_REPO,
             repo_type="dataset",
             token=HF_TOKEN

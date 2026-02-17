@@ -1,4 +1,4 @@
-from fasrapi import FastAPI
+from fastapi import FastAPI
 from huggingface_hub import hf_hub_download
 import json
 import os
@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 
 app=FastAPI(title="Climate Monitor API - CO2 Data")
 
-DATASET_REPO = "https://huggingface.co/datasets/Mehrdat/weapi-store"
+DATASET_REPO = "/Mehrdat/weapi-store"
 
 @app.get("/")
 def home():
