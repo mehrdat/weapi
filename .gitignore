@@ -1,0 +1,24 @@
+# Environment variables
+.env
+.venv
+env/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Database Files
+*.sqlite3
+*.db
+
+# Data files (often too large)
+*.csv
+*.json
+*.parquet
+!cv_dataset.jsonl # unless needed
