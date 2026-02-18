@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pandas
+requests
+numpy
+prophet
+huggingface_hub
+python-multipart
