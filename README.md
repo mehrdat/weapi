@@ -23,7 +23,7 @@ It powers the [ClimateMonitor.info](https://climatemonitor.info) platform and st
 
 ## 📡 API Endpoints
 
-The API is served at `https://huggingface.co/spaces/YOUR_USERNAME/SPACE_NAME` (replace with your actual URL).
+The API is served at `https://huggingface.co/spaces/mehrdat/weapi` (replace with your actual URL).
 
 ### 1. Get Latest Snapshot
 **`GET /latest`**  
@@ -61,8 +61,8 @@ Get data for a single factor.
 
 1. **Clone the repo**
    ```bash
-   git clone https://huggingface.co/spaces/YOUR_USERNAME/SPACE_NAME
-   cd SPACE_NAME
+   git clone https://huggingface.co/spaces/mehrdat/weapi
+   cd weapi
    ```
 
 2. **Install dependencies**
